@@ -55,20 +55,10 @@ extension CalculatorView {
     class ViewModel: ObservableObject {
         @Published var text = "0"
         var writer = ExpressionWriter()
-        init() {
-            // Data will be loaded here
-        }
-        
+
         func onAction(action:CalculatorAction) {
             writer.processAction(action: action)
             self.text = writer.expression
         }
     }
 }
-
-//struct CalculatorView_Previews: PreviewProvider {
-//
-//    static var previews: some View {
-//        CalculatorView()
-//    }
-//}

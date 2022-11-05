@@ -46,34 +46,3 @@ struct IosCalculatorAction {
     var text:String
     var action:CalculatorAction
 }
-//enum ButtonAction {
-//    case digit(_ digit: Int)
-//    case operation(_ operation: Operation)
-//    case negative
-//    case percent
-//    case decimal
-//    case equals
-//    case allClear
-//    case clear
-//
-//    var description: String {
-//        switch self {
-//        case .digit(let digit):
-//            return digit.description
-//        case .operation(let operation):
-//            return operation.description
-//        case .negative:
-//            return "±"
-//        case .percent:
-//            return "%"
-//        case .decimal:
-//            return "."
-//        case .equals:
-//            return "="
-//        case .allClear:
-//            return "AC"
-//        case .clear:
-//            return "C"
-//        }
-//    }
-//}
